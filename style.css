@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #07090e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+}
+
+.Login-Card{
+    background: #0e121d;
+    padding: 36px 28px;
+    border-radius: 20px;
+    width: 320px;
+    border: 1px solid rgba(139,92,246,0.2);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+    color: #fff;
+}
+
+.Login-icon{
+    width: 40px;
+    height: 40px;
+    background: rgba(139,92,246,0.1);
+    color: #8b5cf6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.Login-Card h2{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.input-group{
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.input-group input{
+    width: 100%;
+    padding: 10px 0;
+    background: transparent;
+    border: none;
+    border-bottom: 1.5px solid #222b40;
+    color: #fff;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+.input-group label{
+    position: absolute;
+    left: 0;
+    top: 10px;
+    color: #64748b;
+    font-size: 14px;
+    pointer-events: none;
+    transition: 0.3s ease;
+}
+
+.input-group input:focus ~ label,
+.input-group input:valid ~ label{
+    top: -12px;
+    font-size: 11px;
+    color: #8b5cf6;
+    font-weight: 500;
+}
+
+.input-group input:focus{
+    border-bottom-color: #8b5cf6;
+}
+
+.btn{
+    width: 100%;
+    padding: 12px;
+    background: #8b5cf6;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 12px rgba(139,92,246,0.3);
+}
+
+.btn:hover{
+    opacity: 0.9;
+}
